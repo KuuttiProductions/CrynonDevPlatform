@@ -3,23 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		518693F52B24F20000835AC1 /* CrynonDevPlatformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518693F42B24F20000835AC1 /* CrynonDevPlatformApp.swift */; };
-		518693F72B24F20000835AC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518693F62B24F20000835AC1 /* ContentView.swift */; };
 		518693F92B24F20100835AC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518693F82B24F20100835AC1 /* Assets.xcassets */; };
 		518693FC2B24F20100835AC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518693FB2B24F20100835AC1 /* Preview Assets.xcassets */; };
+		518694092B24F8FE00835AC1 /* DevScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518694082B24F8FE00835AC1 /* DevScene.swift */; };
+		5186940C2B24F97900835AC1 /* Crynon in Frameworks */ = {isa = PBXBuildFile; productRef = 5186940B2B24F97900835AC1 /* Crynon */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		518693F12B24F20000835AC1 /* CrynonDevPlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrynonDevPlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		518693F42B24F20000835AC1 /* CrynonDevPlatformApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrynonDevPlatformApp.swift; sourceTree = "<group>"; };
-		518693F62B24F20000835AC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		518693F82B24F20100835AC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		518693FB2B24F20100835AC1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		518693FD2B24F20100835AC1 /* CrynonDevPlatform.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CrynonDevPlatform.entitlements; sourceTree = "<group>"; };
+		518694082B24F8FE00835AC1 /* DevScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5186940C2B24F97900835AC1 /* Crynon in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,10 +55,10 @@
 			isa = PBXGroup;
 			children = (
 				518693F42B24F20000835AC1 /* CrynonDevPlatformApp.swift */,
-				518693F62B24F20000835AC1 /* ContentView.swift */,
 				518693F82B24F20100835AC1 /* Assets.xcassets */,
 				518693FD2B24F20100835AC1 /* CrynonDevPlatform.entitlements */,
 				518693FA2B24F20100835AC1 /* Preview Content */,
+				518694082B24F8FE00835AC1 /* DevScene.swift */,
 			);
 			path = CrynonDevPlatform;
 			sourceTree = "<group>";
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = CrynonDevPlatform;
+			packageProductDependencies = (
+				5186940B2B24F97900835AC1 /* Crynon */,
+			);
 			productName = CrynonDevPlatform;
 			productReference = 518693F12B24F20000835AC1 /* CrynonDevPlatform.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 518693E82B24F20000835AC1;
+			packageReferences = (
+				5186940A2B24F97900835AC1 /* XCLocalSwiftPackageReference "../Crynon" */,
+			);
 			productRefGroup = 518693F22B24F20000835AC1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				518693F72B24F20000835AC1 /* ContentView.swift in Sources */,
+				518694092B24F8FE00835AC1 /* DevScene.swift in Sources */,
 				518693F52B24F20000835AC1 /* CrynonDevPlatformApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +349,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		5186940A2B24F97900835AC1 /* XCLocalSwiftPackageReference "../Crynon" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Crynon;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5186940B2B24F97900835AC1 /* Crynon */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Crynon;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 518693E92B24F20000835AC1 /* Project object */;
 }

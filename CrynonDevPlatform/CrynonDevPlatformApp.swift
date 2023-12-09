@@ -6,12 +6,21 @@
 //
 
 import SwiftUI
+import Crynon
 
 @main
 struct CrynonDevPlatformApp: App {
-    var body: some Scene {
+    
+    private var core: Core!
+    
+    init() {
+        self.core = Crynon.Core()
+        SceneManager.changeScene(DevScene())
+    }
+    
+    var body: some SwiftUI.Scene {
         WindowGroup {
-            ContentView()
+            DefaultView()
         }
     }
 }
