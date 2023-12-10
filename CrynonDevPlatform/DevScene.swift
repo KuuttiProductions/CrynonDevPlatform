@@ -2,7 +2,7 @@
 import simd
 import Crynon
 
-//BasicScene is just a test scene used in development
+//DevScene is just a test scene used in development
 public class DevScene: Scene {
     
     let object = GameObject("Metamesh")
@@ -76,7 +76,7 @@ public class DevScene: Scene {
         glass3.material.blendMode = .Alpha
         camera.setPosZ(5)
         physics.setPos(0, 0, -3, teleport: true)
-        physics2.setPos(0, 3, -3.1, teleport: true)
+        physics2.setPos(0.2, 3, -3, teleport: true)
         physics.addCollider("Sphere")
         physics2.addCollider("Sphere")
         floor.addCollider("Cube")
@@ -96,7 +96,7 @@ public class DevScene: Scene {
         spotlight.setPos(-15, 3, 0)
         spotlight.lightData.color = simd_float4(1,0,0,1)
         floor.material.visible = true
-        skySphere.texture = "hdr"
+        skySphere.texture = "OceanSky"
     }
     
     public override func tickCustom(_ deltaTime: Float) {

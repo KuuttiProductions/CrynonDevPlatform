@@ -12,6 +12,11 @@
 		518693FC2B24F20100835AC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518693FB2B24F20100835AC1 /* Preview Assets.xcassets */; };
 		518694092B24F8FE00835AC1 /* DevScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518694082B24F8FE00835AC1 /* DevScene.swift */; };
 		5186940C2B24F97900835AC1 /* Crynon in Frameworks */ = {isa = PBXBuildFile; productRef = 5186940B2B24F97900835AC1 /* Crynon */; };
+		51CF95472B25AB3700DF09D6 /* Grass.png in Resources */ = {isa = PBXBuildFile; fileRef = 51CF95432B25AB3700DF09D6 /* Grass.png */; };
+		51CF95482B25AB3700DF09D6 /* Window.png in Resources */ = {isa = PBXBuildFile; fileRef = 51CF95442B25AB3700DF09D6 /* Window.png */; };
+		51CF95492B25AB3700DF09D6 /* OceanSky.png in Resources */ = {isa = PBXBuildFile; fileRef = 51CF95452B25AB3700DF09D6 /* OceanSky.png */; };
+		51CF954A2B25AB3700DF09D6 /* Wallpaper.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 51CF95462B25AB3700DF09D6 /* Wallpaper.jpeg */; };
+		51CF954E2B25AF0B00DF09D6 /* DevCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF954D2B25AF0B00DF09D6 /* DevCamera.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +26,11 @@
 		518693FB2B24F20100835AC1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		518693FD2B24F20100835AC1 /* CrynonDevPlatform.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CrynonDevPlatform.entitlements; sourceTree = "<group>"; };
 		518694082B24F8FE00835AC1 /* DevScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevScene.swift; sourceTree = "<group>"; };
+		51CF95432B25AB3700DF09D6 /* Grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Grass.png; sourceTree = "<group>"; };
+		51CF95442B25AB3700DF09D6 /* Window.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Window.png; sourceTree = "<group>"; };
+		51CF95452B25AB3700DF09D6 /* OceanSky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OceanSky.png; sourceTree = "<group>"; };
+		51CF95462B25AB3700DF09D6 /* Wallpaper.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Wallpaper.jpeg; sourceTree = "<group>"; };
+		51CF954D2B25AF0B00DF09D6 /* DevCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevCamera.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +67,10 @@
 				518693F42B24F20000835AC1 /* CrynonDevPlatformApp.swift */,
 				518693F82B24F20100835AC1 /* Assets.xcassets */,
 				518693FD2B24F20100835AC1 /* CrynonDevPlatform.entitlements */,
+				51CF95422B25AB3700DF09D6 /* Textures */,
 				518693FA2B24F20100835AC1 /* Preview Content */,
 				518694082B24F8FE00835AC1 /* DevScene.swift */,
+				51CF954D2B25AF0B00DF09D6 /* DevCamera.swift */,
 			);
 			path = CrynonDevPlatform;
 			sourceTree = "<group>";
@@ -69,6 +81,17 @@
 				518693FB2B24F20100835AC1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		51CF95422B25AB3700DF09D6 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				51CF95432B25AB3700DF09D6 /* Grass.png */,
+				51CF95442B25AB3700DF09D6 /* Window.png */,
+				51CF95452B25AB3700DF09D6 /* OceanSky.png */,
+				51CF95462B25AB3700DF09D6 /* Wallpaper.jpeg */,
+			);
+			path = Textures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +159,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				518693FC2B24F20100835AC1 /* Preview Assets.xcassets in Resources */,
+				51CF95482B25AB3700DF09D6 /* Window.png in Resources */,
+				51CF954A2B25AB3700DF09D6 /* Wallpaper.jpeg in Resources */,
+				51CF95492B25AB3700DF09D6 /* OceanSky.png in Resources */,
+				51CF95472B25AB3700DF09D6 /* Grass.png in Resources */,
 				518693F92B24F20100835AC1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +176,7 @@
 			files = (
 				518694092B24F8FE00835AC1 /* DevScene.swift in Sources */,
 				518693F52B24F20000835AC1 /* CrynonDevPlatformApp.swift in Sources */,
+				51CF954E2B25AF0B00DF09D6 /* DevCamera.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +315,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -314,6 +343,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
