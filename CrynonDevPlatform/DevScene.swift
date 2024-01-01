@@ -21,6 +21,7 @@ public class DevScene: Scene {
     let physics = RigidBody("physics")
     let physics2 = RigidBody("physics2")
     let skySphere = EnvironmentSphere("OceanSky")
+    let shape = GameObject("Shape")
     
     var time: Float = 0.0
     
@@ -36,14 +37,13 @@ public class DevScene: Scene {
         addChild(glass2)
         addChild(glassH)
         addPhysicsObject(physics)
-        addPhysicsObject(physics2)
+        //addPhysicsObject(physics2)
         addLight(sun)
         addLight(light)
         light.addChild(light2)
-        light.addPosX(1)
         addLight(spotlight)
         object.setPosX(-4)
-        object.material.shaderMaterial.roughness = 0
+        object.material.shaderMaterial.emission = simd_float4(0.5, 0.3, 0.0, 0.9)
         object.material.shaderMaterial.color = simd_float4(0.5, 0.3, 0.0, 1.0)
         object.mesh = "Metamesh"
         floor.setPos(0, -5, -3)
@@ -53,6 +53,8 @@ public class DevScene: Scene {
         floor.isActive = false
         grass.setPos(6, -1.8, 2)
         grass.material.textureColor = "Grass"
+        grass.material.shader = .Transparent
+        grass.material.blendMode = .Alpha
         glass.setPos(5, -1.8, 5)
         glass.material.textureColor = "Window"
         glassF.setPos(5, -1.8, 4)
@@ -88,7 +90,6 @@ public class DevScene: Scene {
         physics2.material.textureColor = "Window"
         sun.lightData.color = simd_float4(1,1,1,1)
         sun.setRotX(Float(45).deg2rad)
-        light.setPosY(1)
         sun.lightData.brightness = 0.8
         sun.direction = simd_float3(0, -1, 1)
         light.lightData.brightness = 1.0
@@ -97,12 +98,21 @@ public class DevScene: Scene {
         spotlight.lightData.color = simd_float4(1,0,0,1)
         floor.material.visible = true
         skySphere.texture = "OceanSky"
+        addChild(shape)
+        shape.setPos(2, -0.5, 0)
+        shape.mesh = "Cube"
+        shape.material.textureColor = "mudC"
+        shape.material.textureAoRoughMetal = "mudI"
+        shape.material.textureNormal = "mudN"
+        shape.material.shaderMaterial.color = simd_float4(0, 1, 0, 1)
+        shape.material.shaderMaterial.roughness = 0.0
     }
     
     public override func tickCustom(_ deltaTime: Float) {
         time += deltaTime
         sun.direction = simd_float3(sin(time/5), -1, cos(time/5))
-        light.setPosY(sin(time)*10+10)
+        light.setPosY(sin(time*2)*3+3)
+        //shape.addRot(simd_float3(0, deltaTime/2, 0))
         spotlight.direction = simd_float3(0, sin(time), cos(time))
         glass2.setRotY(time)
     }

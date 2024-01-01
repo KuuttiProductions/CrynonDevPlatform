@@ -7,30 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5109A3CB2B2DFBB9000563B7 /* debugNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5109A3CA2B2DFBB9000563B7 /* debugNormal.png */; };
+		5109A3CE2B2E0F0E000563B7 /* UVCube.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 5109A3CC2B2E0F0E000563B7 /* UVCube.mtl */; };
+		5109A3CF2B2E0F0E000563B7 /* UVCube.obj in Resources */ = {isa = PBXBuildFile; fileRef = 5109A3CD2B2E0F0E000563B7 /* UVCube.obj */; };
 		518693F52B24F20000835AC1 /* CrynonDevPlatformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518693F42B24F20000835AC1 /* CrynonDevPlatformApp.swift */; };
 		518693F92B24F20100835AC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518693F82B24F20100835AC1 /* Assets.xcassets */; };
 		518693FC2B24F20100835AC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518693FB2B24F20100835AC1 /* Preview Assets.xcassets */; };
 		518694092B24F8FE00835AC1 /* DevScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518694082B24F8FE00835AC1 /* DevScene.swift */; };
 		5186940C2B24F97900835AC1 /* Crynon in Frameworks */ = {isa = PBXBuildFile; productRef = 5186940B2B24F97900835AC1 /* Crynon */; };
+		518FE8882B35CFD70047C395 /* Plane.obj in Resources */ = {isa = PBXBuildFile; fileRef = 518FE8862B35CFD70047C395 /* Plane.obj */; };
+		518FE8892B35CFD70047C395 /* Plane.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 518FE8872B35CFD70047C395 /* Plane.mtl */; };
 		51CF95472B25AB3700DF09D6 /* Grass.png in Resources */ = {isa = PBXBuildFile; fileRef = 51CF95432B25AB3700DF09D6 /* Grass.png */; };
 		51CF95482B25AB3700DF09D6 /* Window.png in Resources */ = {isa = PBXBuildFile; fileRef = 51CF95442B25AB3700DF09D6 /* Window.png */; };
 		51CF95492B25AB3700DF09D6 /* OceanSky.png in Resources */ = {isa = PBXBuildFile; fileRef = 51CF95452B25AB3700DF09D6 /* OceanSky.png */; };
 		51CF954A2B25AB3700DF09D6 /* Wallpaper.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 51CF95462B25AB3700DF09D6 /* Wallpaper.jpeg */; };
 		51CF954E2B25AF0B00DF09D6 /* DevCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF954D2B25AF0B00DF09D6 /* DevCamera.swift */; };
+		51CF95512B25BD4C00DF09D6 /* Shape.obj in Resources */ = {isa = PBXBuildFile; fileRef = 51CF95502B25BD4C00DF09D6 /* Shape.obj */; };
+		51CF95552B25BDA600DF09D6 /* mudC.png in Resources */ = {isa = PBXBuildFile; fileRef = 51CF95522B25BDA500DF09D6 /* mudC.png */; };
+		51CF95562B25BDA600DF09D6 /* mudN.png in Resources */ = {isa = PBXBuildFile; fileRef = 51CF95532B25BDA500DF09D6 /* mudN.png */; };
+		51CF95572B25BDA600DF09D6 /* mudI.png in Resources */ = {isa = PBXBuildFile; fileRef = 51CF95542B25BDA600DF09D6 /* mudI.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5109A3CA2B2DFBB9000563B7 /* debugNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = debugNormal.png; sourceTree = "<group>"; };
+		5109A3CC2B2E0F0E000563B7 /* UVCube.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UVCube.mtl; sourceTree = "<group>"; };
+		5109A3CD2B2E0F0E000563B7 /* UVCube.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UVCube.obj; sourceTree = "<group>"; };
 		518693F12B24F20000835AC1 /* CrynonDevPlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrynonDevPlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		518693F42B24F20000835AC1 /* CrynonDevPlatformApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrynonDevPlatformApp.swift; sourceTree = "<group>"; };
 		518693F82B24F20100835AC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		518693FB2B24F20100835AC1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		518693FD2B24F20100835AC1 /* CrynonDevPlatform.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CrynonDevPlatform.entitlements; sourceTree = "<group>"; };
 		518694082B24F8FE00835AC1 /* DevScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevScene.swift; sourceTree = "<group>"; };
+		518FE8862B35CFD70047C395 /* Plane.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plane.obj; sourceTree = "<group>"; };
+		518FE8872B35CFD70047C395 /* Plane.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Plane.mtl; sourceTree = "<group>"; };
 		51CF95432B25AB3700DF09D6 /* Grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Grass.png; sourceTree = "<group>"; };
 		51CF95442B25AB3700DF09D6 /* Window.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Window.png; sourceTree = "<group>"; };
 		51CF95452B25AB3700DF09D6 /* OceanSky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OceanSky.png; sourceTree = "<group>"; };
 		51CF95462B25AB3700DF09D6 /* Wallpaper.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Wallpaper.jpeg; sourceTree = "<group>"; };
 		51CF954D2B25AF0B00DF09D6 /* DevCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevCamera.swift; sourceTree = "<group>"; };
+		51CF95502B25BD4C00DF09D6 /* Shape.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Shape.obj; sourceTree = "<group>"; };
+		51CF95522B25BDA500DF09D6 /* mudC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mudC.png; sourceTree = "<group>"; };
+		51CF95532B25BDA500DF09D6 /* mudN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mudN.png; sourceTree = "<group>"; };
+		51CF95542B25BDA600DF09D6 /* mudI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mudI.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +85,7 @@
 				518693F42B24F20000835AC1 /* CrynonDevPlatformApp.swift */,
 				518693F82B24F20100835AC1 /* Assets.xcassets */,
 				518693FD2B24F20100835AC1 /* CrynonDevPlatform.entitlements */,
+				51CF954F2B25BD4C00DF09D6 /* Meshes */,
 				51CF95422B25AB3700DF09D6 /* Textures */,
 				518693FA2B24F20100835AC1 /* Preview Content */,
 				518694082B24F8FE00835AC1 /* DevScene.swift */,
@@ -86,12 +105,28 @@
 		51CF95422B25AB3700DF09D6 /* Textures */ = {
 			isa = PBXGroup;
 			children = (
+				5109A3CA2B2DFBB9000563B7 /* debugNormal.png */,
+				51CF95522B25BDA500DF09D6 /* mudC.png */,
+				51CF95542B25BDA600DF09D6 /* mudI.png */,
+				51CF95532B25BDA500DF09D6 /* mudN.png */,
 				51CF95432B25AB3700DF09D6 /* Grass.png */,
 				51CF95442B25AB3700DF09D6 /* Window.png */,
 				51CF95452B25AB3700DF09D6 /* OceanSky.png */,
 				51CF95462B25AB3700DF09D6 /* Wallpaper.jpeg */,
 			);
 			path = Textures;
+			sourceTree = "<group>";
+		};
+		51CF954F2B25BD4C00DF09D6 /* Meshes */ = {
+			isa = PBXGroup;
+			children = (
+				518FE8872B35CFD70047C395 /* Plane.mtl */,
+				518FE8862B35CFD70047C395 /* Plane.obj */,
+				5109A3CC2B2E0F0E000563B7 /* UVCube.mtl */,
+				5109A3CD2B2E0F0E000563B7 /* UVCube.obj */,
+				51CF95502B25BD4C00DF09D6 /* Shape.obj */,
+			);
+			path = Meshes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +160,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					518693F02B24F20000835AC1 = {
 						CreatedOnToolsVersion = 15.0.1;
@@ -159,10 +194,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				518693FC2B24F20100835AC1 /* Preview Assets.xcassets in Resources */,
+				51CF95512B25BD4C00DF09D6 /* Shape.obj in Resources */,
+				51CF95562B25BDA600DF09D6 /* mudN.png in Resources */,
 				51CF95482B25AB3700DF09D6 /* Window.png in Resources */,
 				51CF954A2B25AB3700DF09D6 /* Wallpaper.jpeg in Resources */,
+				51CF95552B25BDA600DF09D6 /* mudC.png in Resources */,
+				5109A3CB2B2DFBB9000563B7 /* debugNormal.png in Resources */,
+				5109A3CE2B2E0F0E000563B7 /* UVCube.mtl in Resources */,
+				51CF95572B25BDA600DF09D6 /* mudI.png in Resources */,
+				518FE8892B35CFD70047C395 /* Plane.mtl in Resources */,
+				5109A3CF2B2E0F0E000563B7 /* UVCube.obj in Resources */,
 				51CF95492B25AB3700DF09D6 /* OceanSky.png in Resources */,
 				51CF95472B25AB3700DF09D6 /* Grass.png in Resources */,
+				518FE8882B35CFD70047C395 /* Plane.obj in Resources */,
 				518693F92B24F20100835AC1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,6 +261,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -235,8 +280,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_MetalCaptureEnabled = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -280,6 +326,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -292,8 +339,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_MetalCaptureEnabled = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -310,12 +358,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"CrynonDevPlatform/Preview Content\"";
 				DEVELOPMENT_TEAM = B8J394Q4M8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_CFBundleDisplayName = DevPlatform;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -338,12 +388,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"CrynonDevPlatform/Preview Content\"";
 				DEVELOPMENT_TEAM = B8J394Q4M8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_CFBundleDisplayName = DevPlatform;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

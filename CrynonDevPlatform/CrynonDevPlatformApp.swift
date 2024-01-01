@@ -17,7 +17,9 @@ struct CrynonDevPlatformApp: App {
         self.core = Crynon.Core()
         loadAssets()
         SceneManager.changeScene(DevScene())
-        Preferences.useSkySphere = true
+        Preferences.core.defaultFPS = 60
+        Preferences.graphics.useSkySphere = true
+        Preferences.graphics.clearColor = MTLClearColor(red: 0.5, green: 0.7, blue: 1, alpha: 1)
     }
     
     func loadAssets() {
@@ -25,6 +27,14 @@ struct CrynonDevPlatformApp: App {
         AssetLibrary.textures.addTexture(textureName: "Window")
         AssetLibrary.textures.addTexture(textureName: "OceanSky", origin: .topLeft)
         AssetLibrary.textures.addTexture(textureName: "Wallpaper", ext: "jpeg")
+        AssetLibrary.textures.addTexture(textureName: "mudC")
+        AssetLibrary.textures.addTexture(textureName: "mudI")
+        AssetLibrary.textures.addTexture(textureName: "mudN")
+        AssetLibrary.textures.addTexture(textureName: "debugNormal")
+        
+        AssetLibrary.meshes.addMesh(meshName: "Shape")
+        AssetLibrary.meshes.addMesh(meshName: "UVCube")
+        AssetLibrary.meshes.addMesh(meshName: "Plane")
     }
     
     var body: some SwiftUI.Scene {
