@@ -3,13 +3,13 @@ import MetalKit
 import GameController
 import Crynon
 
-//FPSCamera is a simple fly-around camera
-open class FPSCamera: Camera {
+//DevCamera is a simple fly-around camera
+open class DevCamera: Camera {
     
     var moveSpeed: Float = 4
     
     public init() {
-        super.init("FPSCamera")
+        super.init("DevCamera")
         self.fieldOfView = 80
         self.nearPlane = 0.03
         self.farPlane = 1000
@@ -63,7 +63,7 @@ open class FPSCamera: Camera {
     }
 }
 
-extension FPSCamera: EventInput {
+extension DevCamera: EventInput {
     public func drawControllerInput(button: GCButtonElementName, down: Bool) {}
 
     public func drawMouseInput(button: MouseButton, down: Bool) {}

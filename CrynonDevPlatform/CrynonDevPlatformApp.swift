@@ -14,7 +14,7 @@ struct CrynonDevPlatformApp: App {
     private var core: Core!
     
     init() {
-        self.core = Crynon.Core()
+        self.core = Crynon.Core(development: true)
         loadAssets()
         SceneManager.changeScene(DevScene())
         Preferences.core.defaultFPS = 60
@@ -31,10 +31,15 @@ struct CrynonDevPlatformApp: App {
         AssetLibrary.textures.addTexture(textureName: "mudI")
         AssetLibrary.textures.addTexture(textureName: "mudN")
         AssetLibrary.textures.addTexture(textureName: "debugNormal")
+        AssetLibrary.textures.addTexture(textureName: "WallpaperGreen")
+        AssetLibrary.textures.addTexture(textureName: "well-diff")
+        AssetLibrary.textures.addTexture(textureName: "well-normal")
         
         AssetLibrary.meshes.addMesh(meshName: "Shape")
         AssetLibrary.meshes.addMesh(meshName: "UVCube")
         AssetLibrary.meshes.addMesh(meshName: "Plane")
+        AssetLibrary.meshes.addMesh(meshName: "SSAOObject")
+        AssetLibrary.meshes.addMesh(meshName: "well")
     }
     
     var body: some SwiftUI.Scene {

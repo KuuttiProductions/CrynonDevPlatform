@@ -10,6 +10,14 @@
 		5109A3CB2B2DFBB9000563B7 /* debugNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 5109A3CA2B2DFBB9000563B7 /* debugNormal.png */; };
 		5109A3CE2B2E0F0E000563B7 /* UVCube.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 5109A3CC2B2E0F0E000563B7 /* UVCube.mtl */; };
 		5109A3CF2B2E0F0E000563B7 /* UVCube.obj in Resources */ = {isa = PBXBuildFile; fileRef = 5109A3CD2B2E0F0E000563B7 /* UVCube.obj */; };
+		5122DFE82B6023E500072843 /* SSAOObject.obj in Resources */ = {isa = PBXBuildFile; fileRef = 5122DFE62B6023E500072843 /* SSAOObject.obj */; };
+		5122DFE92B6023E500072843 /* SSAOObject.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 5122DFE72B6023E500072843 /* SSAOObject.mtl */; };
+		5122DFEB2B6024D100072843 /* WallpaperGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 5122DFEA2B6024D100072843 /* WallpaperGreen.png */; };
+		512E7DE22B76031D002C2916 /* well.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 512E7DDE2B76031D002C2916 /* well.mtl */; };
+		512E7DE32B76031D002C2916 /* well-diff.png in Resources */ = {isa = PBXBuildFile; fileRef = 512E7DDF2B76031D002C2916 /* well-diff.png */; };
+		512E7DE42B76031D002C2916 /* well-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 512E7DE02B76031D002C2916 /* well-normal.png */; };
+		512E7DE52B76031D002C2916 /* well.obj in Resources */ = {isa = PBXBuildFile; fileRef = 512E7DE12B76031D002C2916 /* well.obj */; };
+		512E7DE72B777352002C2916 /* WellScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512E7DE62B777352002C2916 /* WellScene.swift */; };
 		518693F52B24F20000835AC1 /* CrynonDevPlatformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518693F42B24F20000835AC1 /* CrynonDevPlatformApp.swift */; };
 		518693F92B24F20100835AC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518693F82B24F20100835AC1 /* Assets.xcassets */; };
 		518693FC2B24F20100835AC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518693FB2B24F20100835AC1 /* Preview Assets.xcassets */; };
@@ -32,6 +40,14 @@
 		5109A3CA2B2DFBB9000563B7 /* debugNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = debugNormal.png; sourceTree = "<group>"; };
 		5109A3CC2B2E0F0E000563B7 /* UVCube.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UVCube.mtl; sourceTree = "<group>"; };
 		5109A3CD2B2E0F0E000563B7 /* UVCube.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UVCube.obj; sourceTree = "<group>"; };
+		5122DFE62B6023E500072843 /* SSAOObject.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SSAOObject.obj; sourceTree = "<group>"; };
+		5122DFE72B6023E500072843 /* SSAOObject.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SSAOObject.mtl; sourceTree = "<group>"; };
+		5122DFEA2B6024D100072843 /* WallpaperGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WallpaperGreen.png; sourceTree = "<group>"; };
+		512E7DDE2B76031D002C2916 /* well.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = well.mtl; sourceTree = "<group>"; };
+		512E7DDF2B76031D002C2916 /* well-diff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "well-diff.png"; sourceTree = "<group>"; };
+		512E7DE02B76031D002C2916 /* well-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "well-normal.png"; sourceTree = "<group>"; };
+		512E7DE12B76031D002C2916 /* well.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = well.obj; sourceTree = "<group>"; };
+		512E7DE62B777352002C2916 /* WellScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellScene.swift; sourceTree = "<group>"; };
 		518693F12B24F20000835AC1 /* CrynonDevPlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrynonDevPlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		518693F42B24F20000835AC1 /* CrynonDevPlatformApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrynonDevPlatformApp.swift; sourceTree = "<group>"; };
 		518693F82B24F20100835AC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +79,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		512E7DDD2B76031D002C2916 /* well */ = {
+			isa = PBXGroup;
+			children = (
+				512E7DDE2B76031D002C2916 /* well.mtl */,
+				512E7DDF2B76031D002C2916 /* well-diff.png */,
+				512E7DE02B76031D002C2916 /* well-normal.png */,
+				512E7DE12B76031D002C2916 /* well.obj */,
+			);
+			path = well;
+			sourceTree = "<group>";
+		};
 		518693E82B24F20000835AC1 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +117,7 @@
 				518693FA2B24F20100835AC1 /* Preview Content */,
 				518694082B24F8FE00835AC1 /* DevScene.swift */,
 				51CF954D2B25AF0B00DF09D6 /* DevCamera.swift */,
+				512E7DE62B777352002C2916 /* WellScene.swift */,
 			);
 			path = CrynonDevPlatform;
 			sourceTree = "<group>";
@@ -105,6 +133,7 @@
 		51CF95422B25AB3700DF09D6 /* Textures */ = {
 			isa = PBXGroup;
 			children = (
+				5122DFEA2B6024D100072843 /* WallpaperGreen.png */,
 				5109A3CA2B2DFBB9000563B7 /* debugNormal.png */,
 				51CF95522B25BDA500DF09D6 /* mudC.png */,
 				51CF95542B25BDA600DF09D6 /* mudI.png */,
@@ -120,6 +149,9 @@
 		51CF954F2B25BD4C00DF09D6 /* Meshes */ = {
 			isa = PBXGroup;
 			children = (
+				512E7DDD2B76031D002C2916 /* well */,
+				5122DFE72B6023E500072843 /* SSAOObject.mtl */,
+				5122DFE62B6023E500072843 /* SSAOObject.obj */,
 				518FE8872B35CFD70047C395 /* Plane.mtl */,
 				518FE8862B35CFD70047C395 /* Plane.obj */,
 				5109A3CC2B2E0F0E000563B7 /* UVCube.mtl */,
@@ -194,13 +226,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				518693FC2B24F20100835AC1 /* Preview Assets.xcassets in Resources */,
+				5122DFE92B6023E500072843 /* SSAOObject.mtl in Resources */,
 				51CF95512B25BD4C00DF09D6 /* Shape.obj in Resources */,
 				51CF95562B25BDA600DF09D6 /* mudN.png in Resources */,
 				51CF95482B25AB3700DF09D6 /* Window.png in Resources */,
+				5122DFE82B6023E500072843 /* SSAOObject.obj in Resources */,
+				512E7DE42B76031D002C2916 /* well-normal.png in Resources */,
 				51CF954A2B25AB3700DF09D6 /* Wallpaper.jpeg in Resources */,
 				51CF95552B25BDA600DF09D6 /* mudC.png in Resources */,
 				5109A3CB2B2DFBB9000563B7 /* debugNormal.png in Resources */,
 				5109A3CE2B2E0F0E000563B7 /* UVCube.mtl in Resources */,
+				512E7DE52B76031D002C2916 /* well.obj in Resources */,
+				512E7DE32B76031D002C2916 /* well-diff.png in Resources */,
+				5122DFEB2B6024D100072843 /* WallpaperGreen.png in Resources */,
 				51CF95572B25BDA600DF09D6 /* mudI.png in Resources */,
 				518FE8892B35CFD70047C395 /* Plane.mtl in Resources */,
 				5109A3CF2B2E0F0E000563B7 /* UVCube.obj in Resources */,
@@ -208,6 +246,7 @@
 				51CF95472B25AB3700DF09D6 /* Grass.png in Resources */,
 				518FE8882B35CFD70047C395 /* Plane.obj in Resources */,
 				518693F92B24F20100835AC1 /* Assets.xcassets in Resources */,
+				512E7DE22B76031D002C2916 /* well.mtl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				512E7DE72B777352002C2916 /* WellScene.swift in Sources */,
 				518694092B24F8FE00835AC1 /* DevScene.swift in Sources */,
 				518693F52B24F20000835AC1 /* CrynonDevPlatformApp.swift in Sources */,
 				51CF954E2B25AF0B00DF09D6 /* DevCamera.swift in Sources */,

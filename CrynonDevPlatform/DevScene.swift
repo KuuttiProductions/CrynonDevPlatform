@@ -13,7 +13,7 @@ public class DevScene: Scene {
     let glassH = GameObject("WindowH")
     let glass2 = GameObject("Window2")
     let glass3 = GameObject("Window3")
-    let camera = FPSCamera()
+    let camera = DevCamera()
     let sun = DirectionalLight()
     let light = PointLight()
     let light2 = PointLight()
@@ -22,6 +22,7 @@ public class DevScene: Scene {
     let physics2 = RigidBody("physics2")
     let skySphere = EnvironmentSphere("OceanSky")
     let shape = GameObject("Shape")
+    let ssaoShape = GameObject("SSAOShape")
     
     var time: Float = 0.0
     
@@ -57,15 +58,23 @@ public class DevScene: Scene {
         grass.material.blendMode = .Alpha
         glass.setPos(5, -1.8, 5)
         glass.material.textureColor = "Window"
+        glass.material.shaderMaterial.roughness = 0.0
+        glass.material.shaderMaterial.backfaceNormals = true
         glassF.setPos(5, -1.8, 4)
         glassF.material.textureColor = "Window"
+        glassF.material.shaderMaterial.roughness = 0.5
+        glassF.material.shaderMaterial.backfaceNormals = true
         glassH.setPos(5, -1.8, 3)
         glassH.material.textureColor = "Window"
+        glassH.material.shaderMaterial.roughness = 0.5
+        glassH.material.shaderMaterial.backfaceNormals = true
         glass2.setPos(9, -1.5, 2)
         glass2.material.textureColor = "Window"
+        glass2.material.shaderMaterial.backfaceNormals = true
         glass2.addChild(glass3)
         glass3.setPos(2, 0, 0)
         glass3.material.textureColor = "Window"
+        glass3.material.shaderMaterial.backfaceNormals = true
         glassH.material.shader = .Transparent
         glassF.material.shader = .Transparent
         glass.material.shader = .Transparent
@@ -99,13 +108,17 @@ public class DevScene: Scene {
         floor.material.visible = true
         skySphere.texture = "OceanSky"
         addChild(shape)
-        shape.setPos(2, -0.5, 0)
-        shape.mesh = "Cube"
-        shape.material.textureColor = "mudC"
-        shape.material.textureAoRoughMetal = "mudI"
-        shape.material.textureNormal = "mudN"
+        shape.setPos(3, -4, 0)
+        shape.mesh = "well"
+        shape.material.textureColor = "well-diff"
+        shape.material.textureNormal = "well-normal"
         shape.material.shaderMaterial.color = simd_float4(0, 1, 0, 1)
-        shape.material.shaderMaterial.roughness = 0.0
+        shape.material.shaderMaterial.roughness = 0.1
+        addChild(ssaoShape)
+        ssaoShape.setPos(1, -2, 1)
+        ssaoShape.mesh = "SSAOObject"
+        ssaoShape.material.textureColor = "WallpaperGreen"
+        ssaoShape.setScale(0.5)
     }
     
     public override func tickCustom(_ deltaTime: Float) {
